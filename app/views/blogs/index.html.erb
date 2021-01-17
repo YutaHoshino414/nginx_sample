@@ -16,6 +16,7 @@
       <tr>
         <td><%= blog.title %></td>
         <td><%= blog.content %></td>
+        <td><%= blog.created_at.strftime('%Y-%m-%d %T') %></td>
         <td><%= link_to '詳細', blog %></td>
         <td><%= link_to '編集', edit_blog_path(blog) %></td>
         <td><%= link_to '削除', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
